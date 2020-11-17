@@ -36,12 +36,10 @@ plot(y=cdf_y, x=as.numeric(names(cdf_y)), type='l')
 #putting it all together
 par(mfrow=c(2, 2))
 #plot pmf
-plot(pmf, main="Original PMF")
+plot(pmf, main="Original PMF", xlab="X", ylab="PMF", xlim=c(0,255))
 #plot cdf
-plot(y=cdf, x=as.numeric(names(cdf)), type='l', main="Original CDF")
+plot(y=cdf, x=as.numeric(names(cdf)), type='l', main="Original CDF", xlab="X", ylab="CDF", xlim=c(0,255) )
 #plot pmf
-plot(pmf_y, main="Equalized PMF")
+plot(pmf_y, main="Equalized PMF", xlab="Y", ylab="PMF", xlim=c(0,255))
 #plot cdf
-plot(y=cdf_y, x=as.numeric(names(cdf_y)), type='l', main="Equalized CDF")
-
-#
+plot(y=cdf_y, x=as.numeric(names(cdf_y)), type='l', main="Equalized CDF", xlab="Y", ylab="CDF", xlim=c(0,255))
